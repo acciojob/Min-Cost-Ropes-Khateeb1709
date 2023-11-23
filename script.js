@@ -18,7 +18,7 @@ function mincost(arr)
   let minCost = 0;
 
   while(n >= 2){
-      let arr = Object.keys(x);
+      let arr = Object.keys(obj);
 	  
       // [4, 3, 2, 6]
 	  
