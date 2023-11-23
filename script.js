@@ -43,9 +43,9 @@ function mincost(arr)
 	  minCost = minCost + f + s;
 
 	  obj.f--;
-	  if(obj.f === 0 )delete obj["f"];
+	  if(obj.f === 0 )delete obj.f;
 	  obj.s--;
-      if(obj.s === 0 )delete obj["s"];
+      if(obj.s === 0 )delete obj.s;
 
 	  if(obj.minCost === undefined){
          obj.minCost = 1;
