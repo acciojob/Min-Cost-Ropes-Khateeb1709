@@ -6,11 +6,11 @@ function mincost(arr)
 	
  // 4 3 2 6
   arr.forEach((element) => {
-	  if(obj["element"] === undefined){
-		  obj["element"] = 1;
+	  if(obj.element === undefined){
+		  obj.element = 1;
 	  }
 	  else{
-		  obj["element"] += 1;
+		  obj.element += 1;
 	  }
   });
 
@@ -18,7 +18,7 @@ function mincost(arr)
   let minCost = 0;
 
   while(n >= 2){
-      let [f, s] = Object.keys(x);
+      let arr = Object.keys(x);
 	  
       // [4, 3, 2, 6]
 	  
@@ -28,12 +28,31 @@ function mincost(arr)
 	     4 : 1,
 	     6 : 1
 	*/ 
+      let f = 0;
+	  let s = 0;
+	  
+	  if(obj[arr[0]] > 1){
+		  f = arr[0];
+		  s = arr[0];
+	  }
+	  else{
+		  f = arr[0];
+		  s = arr[1];
+	  }
 	  
 	  minCost = minCost + f + s;
 
-	  obj["f"]--;
-	  obj["s"]--;
+	  obj.f--;
+	  if(obj.f === 0 )delete obj["f"];
+	  obj.s--;
+      if(obj.s === 0 )delete obj["s"];
 
+	  if(obj.minCost === undefined){
+         obj.minCost = 1;
+	  }
+	  else{
+		  obj.minCost += 1l
+	  }
 	  n--;
   }
 	
