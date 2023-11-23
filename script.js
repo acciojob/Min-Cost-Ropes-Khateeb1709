@@ -51,7 +51,7 @@ function mincost(arr)
          obj.minCost = 1;
 	  }
 	  else{
-		  obj.minCost += 1l
+		  obj.minCost += 1;
 	  }
 	  n--;
   }
