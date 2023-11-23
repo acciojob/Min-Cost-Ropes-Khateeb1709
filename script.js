@@ -5,14 +5,16 @@ function mincost(arr)
   let obj = {};
 	
  // 4 3 2 6
-  arr.forEach((element) => {
-	  if(obj.element === undefined){
-		  obj.element = 1;
+  for(int i=0;i<arr.length;i++){
+	  int ele = arr[i];
+	  
+	  if(obj.ele === undefined){
+		  obj.ele = 1
 	  }
 	  else{
-		  obj.element += 1;
-	  }
-  });
+		 obj.ele += 1;	  
+	}
+  }
 
   let n = arr.length;
   let minCost = 0;
