@@ -6,7 +6,7 @@ function mincost(arr)
 	
  // 4 3 2 6
   for(let i=0;i<arr.length;i++){
-	  int ele = arr[i];
+	  let ele = arr[i];
 	  
 	  if(obj.ele === undefined){
 		  obj.ele = 1
